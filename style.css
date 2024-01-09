@@ -179,3 +179,22 @@ a {
     padding-top: 80px;
     padding-left: 16px;
 }
+
+.contact-data {
+    width: 50%;
+    padding: 32px 16px 0 16px;
+}
+
+.contact-data > p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-data > p > a {
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.contact-data > p > a:hover {
+    transform: scale(1.05);
+}
