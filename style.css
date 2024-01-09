@@ -1,0 +1,181 @@
+:root {
+    --main-color: #0F0F0F;
+    --second-color: #232d3f;
+    --dark-green-color: #005b41;
+    --light-green-color: #008170;
+    --light-color: #f1f1f1;
+    --lightdark-color: #a1a1a1;
+    --grey-color: #333;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: .3;}
+    100% {opacity: 1;}
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--second-color);
+    color: var(--light-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+}
+
+.main-navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+
+    animation-name: fromTop, fadeIn;
+    animation-duration: 2s;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0));
+}
+
+.main-navbar > .nav-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.main-navbar > .nav-content > a {
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.main-navbar > .nav-content > a:nth-child(2) {
+    margin-left: 12px;
+}
+
+.main-navbar > .nav-content > a > .icon {
+    filter: invert();
+}
+
+.main-navbar > .nav-content > a {
+    transition: 1s;
+}
+
+.main-navbar > .nav-content > a:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    min-height: 100lvh;
+}
+.content {
+    max-width: 1200px;
+    width: 100%;
+    min-height: inherit;
+    margin: 0 auto;
+}
+
+.presentation-container {
+    background-image: linear-gradient(to top, rgba(35, 45, 63, 0.9), rgba(35, 45, 63, 0.9)) , url('./assets/prism.svg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.presentation-container > .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.profile-picture {
+    opacity: 1;
+    animation-name: fromLeft, fadeIn;
+    animation-duration: 2s;
+}
+
+.profile-name {
+    font-weight: 100;
+    color: var(--lightdark-color);
+    animation-name: fromRight, fadeIn;
+    animation-duration: 2s;
+}
+
+.profile-name > .name {
+    font-weight: 900;
+    color: var(--light-color);
+    animation-name: fromRight;
+    animation-duration: 2.5s;
+}
+
+.presentation {
+    color: #e5e5e5;
+    animation-name: fromRight, fadeIn;
+    animation-duration: 3s;
+    text-align: center;
+    margin: 8px;
+}
+
+.second-container {
+    background-color: var(--main-color);
+}
+
+
+.second-container > .content > .techs-title {
+    padding-top: 80px;
+    padding-left: 16px;
+}
+
+.techs {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-row-gap: 1em;
+    justify-items: center;
+}
+
+.third-container {
+    background-color: var(--dark-green-color);
+}
+
+.third-container > div > .contact-title {
+    padding-top: 80px;
+    padding-left: 16px;
+}

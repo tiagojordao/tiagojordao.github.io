@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tiago Jordao Portfolio"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+    <title>tiagojordao - portfolio</title>
+</head>
+<body>
+    <nav class="main-navbar">
+        <div class="content nav-content">
+            <a href="https://linkedin.com/in/tiago-jordao"><img src="./assets/linkedin-svg.svg" alt="linkedin icon" class="linkedin-icon icon" width="24px"></a>
+            <a href="https://github.com/tiagojordao"><img src="./assets/github-svg.svg" alt="github-icon" class="git-icon icon" width="24px"></a>
+            <a onclick="goToByIdWithScroll('third-container')">Contact</a>
+            <a onclick="goToByIdWithScroll('second-container')">Technologies</a>
+            <a onclick="goToByIdWithScroll('first-container')">Home</a>
+        </div>
+    </nav>
+    <div id="first-container" class="container presentation-container">
+        <div class="content">
+            <img class="profile-picture" src="./assets/profile.png" alt="tiagojordao-profile-picture" width="200px">
+            <h1 class="profile-name">
+                <span>Hi, I'm</span>
+                <span class="name">Tiago Jordão</span>
+            </h1>
+            <p class="presentation">
+                I'm a Software Engineering student and BSc IT at Universidade Federal do Rio Grande do Norte(UFRN).</br>
+                currently based in Natal/RN, Brazil. I'm a full stack developer in love with JS.
+            </p>
+        </div>
+    </div>
+    <div id="second-container" class="container second-container">
+        <div class="content">
+             <h2 class="techs-title">
+                Technologies
+             </h2>
+             <section class="techs">
+                <img src="./assets/javascript-svg.svg" alt="JavaScript Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/typescript-svg.svg" alt="typescript Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/html-5-svg.svg" alt="html Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/css-3-svg.svg" alt="css Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/java-svg.svg" alt="java Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/spring-svg.svg" alt="spring Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/react-svg.svg" alt="react Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/docker-svg.svg" alt="docker Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/mysql-svg.svg" alt="mysql Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/postgresql-svg.svg" alt="postgresql Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/mongodb-svg.svg" alt="mongodb Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/git-svg.svg" alt="git Icon" class="tech-icon" width="150px" loading="lazy">
+             </section>
+        </div>
+    </div>
+    <div id="third-container" class="container third-container">
+        <div class="content">
+             <h2 class="contact-title">
+                Contact
+             </h2>
+        </div>
+    </div>
+</body>
+</html>
