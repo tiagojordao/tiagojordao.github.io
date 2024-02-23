@@ -83,6 +83,7 @@ a {
 .main-navbar > .nav-content > a {
     cursor: pointer;
     margin-right: 12px;
+    transition: 1s;
 }
 
 .main-navbar > .nav-content > a:nth-child(2) {
@@ -93,12 +94,8 @@ a {
     filter: invert();
 }
 
-.main-navbar > .nav-content > a {
-    transition: 1s;
-}
-
 .main-navbar > .nav-content > a:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) translateY(-2px);
 }
 
 .container {
@@ -171,6 +168,10 @@ a {
     justify-items: center;
 }
 
+.techs > img {
+    width: 150px;
+}
+
 .third-container {
     background-color: var(--dark-green-color);
 }
@@ -197,4 +198,111 @@ a {
 
 .contact-data > p > a:hover {
     transform: scale(1.05);
+}
+
+h2 {
+    padding-top: 80px;
+    padding-left: 16px;
+}
+
+.portfolioDescription {
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.portfolio > div.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: var(--second-color);
+    max-width: 300px;
+    width: 100%;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+section.portfolio > div.card > .cardImage {
+    width: 100%;
+    height: 150px;
+}
+
+section.portfolio > div.card > .objectFit{
+    object-fit: cover;
+}
+
+section.portfolio > div.card > h3 {
+    margin: 4px 0;
+}
+
+section.portfolio > div.card > p.cardDescription {
+    flex-grow: 1;
+    font-size: 0.8em;
+    margin-bottom: 16px;
+}
+
+section.portfolio > div.card > .cardButton {
+    padding: 8px 16px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: var(--main-color);
+    width: 60%;
+}
+
+section.portfolio > div.card > .cardButton:before {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease;
+}
+
+section.portfolio > div.card > .cardButton:hover:before {
+    height: 100%;
+    z-index: -1;
+}
+
+section.portfolio > div.card > .cardButton:hover {
+    color: white;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+    .presentation {
+        font-size: 1em;
+    }
+    .main-navbar > .nav-content > a {
+        font-size: .8em;
+    }
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .portfolio > :last-child {
+        margin-bottom: 32px;
+    }
+
+    .techs {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .techs > img {
+        width: 100px;
+    }
 }

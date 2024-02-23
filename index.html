@@ -15,6 +15,7 @@
             <a href="https://linkedin.com/in/tiago-jordao" target="_blank"><img src="./assets/linkedin-svg.svg" alt="linkedin icon" class="linkedin-icon icon" width="24px"></a>
             <a href="https://github.com/tiagojordao" target="_blank"><img src="./assets/github-svg.svg" alt="github-icon" class="git-icon icon" width="24px"></a>
             <a onclick="goToByIdWithScroll('third-container')">Contact</a>
+            <a onclick="goToByIdWithScroll('portfolioContainer')">Portfolio</a>
             <a onclick="goToByIdWithScroll('second-container')">Technologies</a>
             <a onclick="goToByIdWithScroll('first-container')">Home</a>
         </div>
@@ -38,33 +39,75 @@
                 Technologies
              </h2>
              <section class="techs">
-                <img src="./assets/javascript-svg.svg" alt="JavaScript Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/typescript-svg.svg" alt="typescript Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/html-5-svg.svg" alt="html Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/css-3-svg.svg" alt="css Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/java-svg.svg" alt="java Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/spring-svg.svg" alt="spring Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/react-svg.svg" alt="react Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/docker-svg.svg" alt="docker Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/mysql-svg.svg" alt="mysql Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/postgresql-svg.svg" alt="postgresql Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/mongodb-svg.svg" alt="mongodb Icon" class="tech-icon" width="150px" loading="lazy">
-                <img src="./assets/git-svg.svg" alt="git Icon" class="tech-icon" width="150px" loading="lazy">
+                <img src="./assets/javascript-svg.svg" alt="JavaScript Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/typescript-svg.svg" alt="typescript Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/html-5-svg.svg" alt="html Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/css-3-svg.svg" alt="css Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/java-svg.svg" alt="java Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/spring-svg.svg" alt="spring Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/react-svg.svg" alt="react Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/docker-svg.svg" alt="docker Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/mysql-svg.svg" alt="mysql Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/postgresql-svg.svg" alt="postgresql Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/mongodb-svg.svg" alt="mongodb Icon" class="tech-icon" loading="lazy">
+                <img src="./assets/git-svg.svg" alt="git Icon" class="tech-icon" loading="lazy">
              </section>
         </div>
     </div>
-    <!-- <div id="third-container" class="container third-container">
+    <div id="portfolioContainer" class="container">
+        <div class="content">
+            <h2 class="portfolioTitle">
+                Portfolio
+            </h2>
+            <p class="portfolioDescription">
+                Some of my previous works currently in production.
+            </p>
+            <section class="portfolio">
+                <div class="card">
+                    <img src="assets/mianFacade.jpeg" alt="#" class="cardImage objectFit">
+                    <h3 class="cardTitle">Mian</h3>
+                    <p class="cardDescription">
+                        Named after the Chinese word for “noodle,” MIAN serves authentic Sichuan-style noodles and traditional dishes in four lively locations across Southern California. An homage to the distinctly delicious (and tongue-numbing) cuisine of China’s Sichuan Province, our menu is anchored by the bold, pungent, and spicy flavors for which the region is known and revered.
+                    </p>
+                    <a class="cardButton" href="https://miantaste.com/" target="_blank">Go to Website</a>
+                </div>
+                <div class="card">
+                    <img src="assets/zozoLogo.png" alt="#" class="cardImage">
+                    <h3 class="cardTitle">ZOZO</h3>
+                    <p class="cardDescription">
+                        ZOZO at Maison Midi invites guests to witness John Sedlar’s culinary artistry in an open kitchen, called the Atelier, where he plates his “Cuisine of the Sun” dishes. Inspired by the globe’s equatorial countries, ZOZO’s kitchen celebrates flavors of spice, sweetness, sourness, and herbaceous combinations.
+                    </p>
+                    <a class="cardButton" href="https://zozolabrea.com/" target="_blank">Go to Website</a>
+                </div>
+                <div class="card">
+                    <img src="assets/clijaLogo.jpg" alt="#" class="cardImage objectFit">
+                    <h3 class="cardTitle">Clija Chait</h3>
+                    <p class="cardDescription">Clíja Raissa Oliveira Chait is an entrepreneur who has been investing in food services for 7 years in Asia, Brazil, and the United States, where she currently resides.</p>
+                    <a class="cardButton" href="https://clijaochait.com/" target="_blank">Go to Website</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="third-container" class="container third-container">
         <div class="content">
              <h2 class="contact-title">
                 Contact
              </h2>
              <div class="contact-data">
-                <p>
+                <p class="contact__email">
                     <b>Email: </b>
-                    <a href="mailto:tiagojordaopcm@gmail.com" target="_blank">tiagojordaopcm@gmail.com</a>
+                    <a href="mailto:tiagojordaopcm@gmail.com" target="_blank"> tiagojordaopcm@gmail.com</a>
+                </p>
+                <p class="contact__linkedin">
+                    <b>LinkedIn: </b>
+                    <a href="https://www.linkedin.com/in/tiago-jordao/" target="_blank"> LinkedIn</a>
+                </p>
+                <p class="contact__github">
+                    <b>GitHub: </b>
+                    <a href="https://github.com/tiagojordao" target="_blank"> GitHub</a>
                 </p>
              </div>
         </div>
-    </div> -->
+    </div>
 </body>
 </html>
