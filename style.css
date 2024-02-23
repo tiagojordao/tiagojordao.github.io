@@ -83,6 +83,7 @@ a {
 .main-navbar > .nav-content > a {
     cursor: pointer;
     margin-right: 12px;
+    transition: 1s;
 }
 
 .main-navbar > .nav-content > a:nth-child(2) {
@@ -91,10 +92,6 @@ a {
 
 .main-navbar > .nav-content > a > .icon {
     filter: invert();
-}
-
-.main-navbar > .nav-content > a {
-    transition: 1s;
 }
 
 .main-navbar > .nav-content > a:hover {
@@ -171,6 +168,10 @@ a {
     justify-items: center;
 }
 
+.techs > img {
+    width: 150px;
+}
+
 .third-container {
     background-color: var(--dark-green-color);
 }
@@ -199,22 +200,22 @@ a {
     transform: scale(1.05);
 }
 
-#portfolioContainer > div.content > h2 {
+h2 {
     padding-top: 80px;
     padding-left: 16px;
 }
 
-#portfolioContainer > div.content > .portfolioDescription {
+.portfolioDescription {
     padding-left: 16px;
     margin-bottom: 16px;
 }
 
-#portfolioContainer > div.content > .portfolio {
+.portfolio {
     display: flex;
     justify-content: space-around;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card {
+section.portfolio > div.card {
     background-color: #fff;
     border: none;
     border-radius: 5px;
@@ -222,27 +223,31 @@ a {
     max-width: 300px;
     width: 100%;
     padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > .cardImage {
+section.portfolio > div.card > .cardImage {
     width: 100%;
     height: 150px;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > .objectFit{
+section.portfolio > div.card > .objectFit{
     object-fit: cover;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > h3 {
+section.portfolio > div.card > h3 {
     margin: 4px 0;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > p {
+section.portfolio > div.card > p.cardDescription {
+    flex-grow: 1;
     font-size: 0.8em;
     margin-bottom: 16px;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > .cardButton {
+section.portfolio > div.card > .cardButton {
     padding: 8px 16px;
     background: transparent;
     border: 2px solid var(--main-color);
@@ -252,9 +257,10 @@ a {
     z-index: 1;
     text-decoration: none;
     color: var(--main-color);
+    width: 60%;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > .cardButton:before {
+section.portfolio > div.card > .cardButton:before {
     content: "";
     background-color: var(--main-color);
     position: absolute;
@@ -265,11 +271,38 @@ a {
     transition: all 0.3s ease;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > .cardButton:hover:before {
+section.portfolio > div.card > .cardButton:hover:before {
     height: 100%;
     z-index: -1;
 }
 
-#portfolioContainer > div.content > section.portfolio > div.card > .cardButton:hover {
+section.portfolio > div.card > .cardButton:hover {
     color: white;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+    .presentation {
+        font-size: 1em;
+    }
+    .main-navbar > .nav-content > a {
+        font-size: .8em;
+    }
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .portfolio > :last-child {
+        margin-bottom: 32px;
+    }
+
+    .techs {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .techs > img {
+        width: 100px;
+    }
 }
